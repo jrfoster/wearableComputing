@@ -46,8 +46,8 @@ To run the driver program, simply execute the function run_analysis() in the con
 
 | Argument | Description |
 | --- | --- |
-| datadir | The top-level directory of the UCI HAR Dataset, assumed to be in the working directory | 
-| outputraw | A flag to indicate if you also wish to write the raw data in addition to the aggregated dataset.  This can be useful for testing purposes. | 
+| datadir | The top-level directory of the UCI HAR Dataset, assumed to be in the working directory. Default value is "UCI HAR Dataset" | 
+| outputraw | A flag to indicate if you also wish to write the raw data in addition to the aggregated dataset.  This can be useful for testing purposes. Default value is FALSE. | 
 
 Details
 The function requires data.table, and will install it, plus its dependencies, if not present in the environment.  If unable to install or load this package, the function will halt.
