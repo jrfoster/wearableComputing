@@ -6,6 +6,8 @@ This repository contains the deliverables related to the course project for the 
 
 The data for this project come from the [Human Activity Recognition Study](https://www.elen.ucl.ac.be/Proceedings/esann/esannpdf/es2013-84.pdf).
 
+This [paper](http://vita.had.co.nz/papers/tidy-data.pdf) contains more information on what constitutes a "tidy" dataset.
+
 Artifacts
 --
 In this repository you will find the following artifacts:
@@ -16,14 +18,14 @@ In this repository you will find the following artifacts:
 | CodeBook.md | The code book describing the tidy data |
 | run_analysis.R | The driver program to produce the tidy data |
 
-Running the Analysis Program
+Requirements
 --
 To be able to execute the driver program to produce the tidy data, you must have the following:
  1. A local copy of this repository. 
  2. An environment in which to source and execute the R program, such as RStudio, or the R Console, available from [CRAN](https://cran.r-project.org/).
  2. The public dataset from the [Human Activity Recognition Study](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
-Creating the DataSet
+Producing the Tidy DataSet
 --
 To create the dataset, perform the following steps:
 
