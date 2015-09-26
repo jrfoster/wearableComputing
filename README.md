@@ -12,10 +12,10 @@ In this repository you will find the following artifacts:
 
 | Name | Description |
 | --- | --- |
-| README.md          | This file |
-| CodeBook.md        | The code book describing the tidy data       |
-| run_analysis.R     | The driver program to produce the tidy data  |
-| finalTidyData.txt  | The tidy data produced by the driver program |
+| README.md | This file |
+| CodeBook.md | The code book describing the tidy data |
+| run_analysis.R | The driver program to produce the tidy data |
+| finalTidyData.txt | The tidy data produced by the driver program |
 
 Running the Analysis Program
 --
@@ -47,8 +47,8 @@ Usage
 
 | Argument | Description |
 | --- | --- |
-| datadir | The top-level directory of the UCI HAR Dataset, assumed to be in the working directory |
-| outputraw | A flag to indicate if you also wish to write the raw data in addition to the aggregated dataset.  This can be useful for testing purposes. |
+| datadir | The top-level directory of the UCI HAR Dataset, assumed to be in the working directory | 
+| outputraw | A flag to indicate if you also wish to write the raw data in addition to the aggregated dataset.  This can be useful for testing purposes. | 
 
 Details
 The function requires data.table, and will install it, plus its dependencies, if not present in the environment.  If unable to install or load this package, the function will halt.
