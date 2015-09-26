@@ -1,3 +1,5 @@
 .DS_Store
 UCI\ HAR\ Dataset/*
 .httr-oauth
+.R*
+*.txt
