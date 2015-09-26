@@ -40,7 +40,7 @@ Function Documentation
 --
 Generally speaking, the driver program is self-contained, and requires the base R packages plus the [data.table R package](https://cran.r-project.org/web/packages/data.table/index.html).  The program itself will install this package if it is not already present in your R environment.
 
-To run the driver program, simply execute the function run_analysis() in the console. 
+To run the driver program, simply execute the function run_analysis() in the R console. 
 
     run_analysis(datadir = "UCI HAR Dataset", outputraw = FALSE)
 
