@@ -15,7 +15,6 @@ In this repository you will find the following artifacts:
 | README.md | This file |
 | CodeBook.md | The code book describing the tidy data |
 | run_analysis.R | The driver program to produce the tidy data |
-| finalTidyData.txt | The tidy data produced by the driver program |
 
 Running the Analysis Program
 --
@@ -29,7 +28,7 @@ Creating the DataSet
 To create the dataset, perform the following steps:
 
  1. Download the [UCI HAR Dataset](https://d396qusza40orc.cloudfront.net/getdata/projectfiles/UCI%20HAR%20Dataset.zip) to your computer.
- 2. Unzip the dataset into your R working directory, preserving the zip file's directory structure.In 
+ 2. Unzip the dataset into your R working directory, preserving the zip file's directory structure.
  3. Copy run_analysis.R into your R working directory.
  4. In the R console, source the driver program `source(run_analysis.R)`
  5. Execute the driver program, optionally specifying the data directory and whether or not to produce the raw data `run_analysis()`
