@@ -57,7 +57,8 @@ The function requires the HAR dataset, and will make a small attempt to verify t
 
 The program combines the test and training datasets for observations, activities and subjects into single datasets using read.table and rbind.  The activities are loaded as factors to facilitate labeling with appropriate text.  As data is loaded and combined, the source data structures are removed from memory to conserve resources.
 
-Feature extraction was performed using a simple regular expression for identifying all features that are either a mean or a standard deviation, according to the study documentation.  The regex used is `.*-mean[(]|.*-std[(]` which essentially extracts all columns with "mean(" or "std(" in the name.  These columns were chosen based on the study documentation's description of each of the "functions" in the feature names, as shown in the following table
+Feature extraction was performed using a simple regular expression for identifying all features that are either a mean or a standard deviation, according to the study documentation.  The regex used is `.*-mean[(]|.*-std[(]` which essentially extracts all columns with "mean(" or "std(" in the name.  These columns were chosen based on the study documentation's description of each of the "functions" in the feature names, as shown in the following table.
+
 | Function | Description |
 | --- | --- |
 | mean | Mean value |
