@@ -6,9 +6,9 @@ This document contains information about the source data from which the tidy dat
 
 The data have been extracted from the Human Activity Recognition (HAR) dataset.  The Human Activity Recognition dataset was built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.  The data are a public domain dataset, but its use requires an acknowledgement [1].
 
-The original experiments were conducted with a group of 30 volunteers between the ages of 19-48 years. Each person performed six activities (WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist.  The original dataset was randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.  The partitioning is an important assumption because it directly implies that the two datasets are mutually exclusive and can be combined simply by appending the rows of the training set to the rows of the test set (union).
+The original experiments were conducted with a group of 30 volunteers between the ages of 19-48 years. Each person performed six activities (WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist.  The original dataset was randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.  The partitioning strategy is important because it directly implies that the two datasets (test and train) are mutually exclusive and can therefore be combined simply by appending (union) the rows of the training set to the rows of the test set.
 
-The data are given in a comma-separated format, with quoted strings.  It also contains a single header row.
+The data are given in a comma-separated file, with quoted strings.  The file contains a single header row.
 
 Data Type Definitions
 ---
