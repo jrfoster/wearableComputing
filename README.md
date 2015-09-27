@@ -64,8 +64,14 @@ To obtain meaningful activity names, the combined activity data was labeled with
 
 Column names were derived by using the regex-derived vector on the feature descriptions read from features.txt and applied as colNames on the combined observation data.
 
-The final dataset was produced using cbind to combine the union-ed subject, activity label and observation subset.
+The final raw dataset was produced using cbind to combine the union-ed subject, activity label and observation subset.
 
-The aggregation to calculate means for each subject and activity was performed using the data.table package, largely for performance reasons.  I did investigate the reshape2 package and the melt/cast functionality, and while it was functional, it didn't perform as well as the data.table aggregations and it felt inefficient to have to transpose the data to another format just for the purposes of aggregation.
+The aggregation to calculate means for each subject and activity was performed using the data.table package, largely for performance reasons.  I did investigate the reshape2 package and the melt/cast functionality, and while it was functional, it didn't perform as well as the data.table aggregations and it felt inefficient to have to transpose the data to another format just for the purposes of aggregation.  
+
+Note that the final dataset is in wide format.
+
+Testing Performed
+---
+The steps were performed with the outputraw parameter set to TRUE.  A table was created in MySQL corresponding to the dataset and the data from the raw dataset was loaded using LOAD TABLE.  Several aggregate queries to produce means were run for various subject/activity combinations and for several variables and the results were visually compared to the final tidy data set.  No anomalies were discovered, but the testing was not exhaustive.
 
 > Written with [StackEdit](https://stackedit.io/).
