@@ -46,6 +46,7 @@ fBodyGyroJerkMag
 
 From each sampled window described above a vector of features was obtained. Standard measures previously used in HAR literature such as the mean, correlation, signal magnitude area (SMA) and autoregression coefficients were employed for the feature mapping. A new set of features was also employed in order to improve the learning performance, including energy of different frequency bands, frequency skewness, and angle between vectors (e.g. mean body acceleration and y vector). Listed below are all the measures applied to the time and frequency domain signals.
 
+
 | Function | Description |
 | --- | --- |
 | mean | Mean value |
@@ -65,6 +66,7 @@ From each sampled window described above a vector of features was obtained. Stan
 | kurtosis | Frequency signal Kurtosis |
 | energyBand | Energy of a frequency interval |
 | angle | Angle between two vectors |
+
 
 With this, a total of 561 features were derived.
 
