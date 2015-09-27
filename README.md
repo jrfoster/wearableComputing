@@ -51,37 +51,21 @@ To run the driver program, simply execute the function run_analysis() in the R c
 
 
 Details
-
+---
 The function requires data.table, and will install it, plus its dependencies, if not present in the environment.  If unable to install or load this package, the function will halt.
 
 The function requires the HAR dataset, and will make a small attempt to verify that its actually there by checking for datadir within the current working directory, along with datadir/test and datadir/train.  If any of those directories are not present, the function will halt.
 
-The program combines the test and training datasets for observations, activities and subjects into single datasets using read.table and rbind.  The activities are loaded as factors to facilitate labeling with appropriate text.  As data is loaded and combined, the source data structures are removed from memory to conserve resources.
+The program combines the test and training datasets for observations, activities and subjects into separate single datasets by using read.table to read the source files from disk and rbind to create a union of the rows read for each dataset.  Activities are loaded as factors to facilitate later labeling with appropriate text.  As data is loaded and combined, the source data structures are removed from memory to conserve resources.
 
-Feature extraction was performed using a simple regular expression for identifying all features that are either a mean or a standard deviation, according to the study documentation.  The regex used is `.*-mean[(]|.*-std[(]` which essentially extracts all columns with "mean(" or "std(" in the name.  These columns were chosen based on the study documentation's description of each of the "functions" in the feature names, as shown in the following table.
+Feature extraction was performed using a simple regular expression for identifying all features that are either a mean or a standard deviation, according to the study documentation.  The regex used is `.*-mean[(]|.*-std[(]` which essentially extracts all columns with "mean(" or "std(" in the name.  Features were read from features.txt and the regex was applied to create the desired feature vector.  This vector was used to subset the combined observation data into a 66-variable set of observations.  For more information on this feature extraction, please see the CodeBook.
 
-| Function | Description |
-| --- | --- |
-| mean | Mean value |
-| std | Standard deviation |
-| mad | Median absolute value |
-| max | Largest values in array |
-| min | Smallest value in array |
-| sma | Signal magnitude area |
-| energy | Average sum of the squares |
-| iqr | Interquartile range |
-| entropy | Signal Entropy |
-| arCoeff | Autorregresion coefficients |
-| correlation | Correlation coefficient |
-| maxFreqInd | Largest frequency component |
-| meanFreq | Frequency signal weighted average |
-| skewness | Frequency signal Skewness |
-| kurtosis | Frequency signal Kurtosis |
-| energyBand | Energy of a frequency interval |
-| angle | Angle between two vectors |
+To obtain meaningful activity names, the combined activity data was labeled with the contents of the activity_labels.txt using standard R factors.
 
-For more information, please see the CodeBook.
+Column names were derived by using the regex-derived vector on the feature descriptions read from features.txt and applied as colNames on the combined observation data.
 
-The aggregation was performed using the data.table package, largely for performance reasons.  I did investigate the reshape2 package and the melt/cast functionality, and while it was functional, it didn't perform as well as the data.table aggregations and it felt inefficient to have to transpose the data to another format just for the purposes of aggregation.
+The final dataset was produced using cbind to combine the union-ed subject, activity label and observation subset.
+
+The aggregation to calculate means for each subject and activity was performed using the data.table package, largely for performance reasons.  I did investigate the reshape2 package and the melt/cast functionality, and while it was functional, it didn't perform as well as the data.table aggregations and it felt inefficient to have to transpose the data to another format just for the purposes of aggregation.
 
 > Written with [StackEdit](https://stackedit.io/).
