@@ -27,9 +27,9 @@ The authors of the study collected triaxial linear acceleration and angular velo
 Additional time signals were obtained by calculating from the triaxial signals the Euclidean magnitude and time derivatives (jerk da/dt and angular acceleration dw/dt).  Thus, a total of 17 signals were obtained with this method, which are listed below.  '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
  - tBodyAcc-XYZ
- - tBodyAccJerk-XYZ 
+ - tBodyAccJerk-XYZ
  - tBodyGyro-XYZ
- - tBodyGyroJerk-XYZ 
+ - tBodyGyroJerk-XYZ
  - tBodyAccMag
  - tGravityAccMag
  - tBodyAccJerkMag
