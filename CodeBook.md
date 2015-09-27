@@ -12,7 +12,7 @@ The data are combined from several files from the original dataset, with only ce
 
 ![File Map](filemap.png)
 
-The data are given in a comma-separated file, with quoted strings.  The file contains a single header row.
+The data are given in a comma-separated file, with quoted strings.  The file contains a single header row and consists of 180 observations of 68 variables, which are further defined below.
 
 Data Type Definitions
 ---
