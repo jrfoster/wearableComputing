@@ -2,7 +2,7 @@ Tidy Data CodeBook
 ===
 Overview
 ---
-This document contains information about the source data from which the tidy data are produced and information about the final data produced.  Information in this document borrows heavily from the [UCI HAR study documentation](https://www.elen.ucl.ac.be/Proceedings/esann/esannpdf/es2013-84.pdf).
+This document contains information about the source data from which the tidy data are produced and information about the final data produced.  Information in this document borrows heavily from the [UCI HAR study documentation](https://www.elen.ucl.ac.be/Proceedings/esann/esannpdf/es2013-84.pdf).  Also, note that the reader should consult the README in this repository for operational information, as well as the README and features_info.txt in the original HAR dataset package for further descriptions of data elements.
 
 The data have been extracted from the Human Activity Recognition (HAR) dataset.  The Human Activity Recognition dataset was built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.  The data are a public domain dataset, but its use requires an acknowledgement [1].
 
@@ -27,9 +27,9 @@ The authors of the study collected triaxial linear acceleration and angular velo
 Additional time signals were obtained by calculating from the triaxial signals the Euclidean magnitude and time derivatives (jerk da/dt and angular acceleration dw/dt).  Thus, a total of 17 signals were obtained with this method, which are listed below.  '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
  - tBodyAcc-XYZ
- - tBodyAccJerk-XYZ 
+ - tBodyAccJerk-XYZ
  - tBodyGyro-XYZ
- - tBodyGyroJerk-XYZ 
+ - tBodyGyroJerk-XYZ
  - tBodyAccMag
  - tGravityAccMag
  - tBodyAccJerkMag
@@ -73,52 +73,52 @@ From this 561-feature vector were chosen those corresponding to the mean (mean) 
 
 Therefore, each observation (row) in this new data set consists of the following variables (columns).  Note, that '-XYZ' denotes three individual variables, one for each axes X, Y and Z.
 
-Subject (i)
-A numeric string identifying the volunteer who performed the activity and whose data are recorded in the observation.  The source of the data is the union of the subject\_test.txt and subject\_train.txt
+**Subject (i)**<br>
+An integer in the range between 1 and 30 identifying the volunteer who performed the activity and whose data are recorded in the observation.  The source of the data is the union of the subject\_test.txt and subject\_train.txt
 
-ActivityLabel (c)
-A string identifying the activity Subject performed to generate the data in the observation.  The source of this data is the union of the y\_test.txt and y\_train.txt expressed as a factor using data from the activity\_labels.txt file.
+**ActivityLabel (c)**<br>
+A string identifying the activity Subject performed to generate the data in the observation.  Values for this variable are one of the following (WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING, STANDING or LAYING).  The source of this data is the union of the y\_test.txt and y\_train.txt expressed as a factor using data from the activity\_labels.txt file.
 
-tBodyAcc-mean()-XYZ (d)
-tBodyAcc-std()-XYZ (d)
-tGravityAcc-mean()-XYZ (d)
-tGravityAcc-std()-XYZ (d)
+**tBodyAcc-mean()-XYZ (d)**<br>
+**tBodyAcc-std()-XYZ (d)**<br>
+**tGravityAcc-mean()-XYZ (d)**<br>
+**tGravityAcc-std()-XYZ (d)**<br>
 The estimated mean and standard deviation for the acceleration signal, separated into body and gravity acceleration signals.
 
-tBodyAccJerk-mean()-XYZ (d)
-tBodyAccJerk-std()-XYZ (d)
-tBodyGyro-mean()-XYZ (d)
-tBodyGyro-std()-XYZ (d)
-tBodyGyroJerk-mean()-XYZ (d)
-tBodyGyroJerk-std()-XYZ (d)
+**tBodyAccJerk-mean()-XYZ (d)**<br>
+**tBodyAccJerk-std()-XYZ (d)**<br>
+**tBodyGyro-mean()-XYZ (d)**<br>
+**tBodyGyro-std()-XYZ (d)**<br>
+**tBodyGyroJerk-mean()-XYZ (d)**<br>
+**tBodyGyroJerk-std()-XYZ (d)**<br>
 The estimated mean and standard deviation for the jerk signals derived from the body linear acceleration and angular velocity.
 
-tBodyAccMag-mean() (d)
-tBodyAccMag-std() (d)
-tGravityAccMag-mean() (d)
-tGravityAccMag-std() (d)
-tBodyAccJerkMag-mean() (d)
-tBodyAccJerkMag-std() (d)
-tBodyGyroMag-mean() (d)
-tBodyGyroMag-std() (d)
-tBodyGyroJerkMag-mean() (d)
-tBodyGyroJerkMag-std() (d)
+**tBodyAccMag-mean() (d)**<br>
+**tBodyAccMag-std() (d)**<br>
+**tGravityAccMag-mean() (d)**<br>
+**tGravityAccMag-std() (d)**<br>
+**tBodyAccJerkMag-mean() (d)**<br>
+**tBodyAccJerkMag-std() (d)**<br>
+**tBodyGyroMag-mean() (d)**<br>
+**tBodyGyroMag-std() (d)**<br>
+**tBodyGyroJerkMag-mean() (d)**<br>
+**tBodyGyroJerkMag-std() (d)**<br>
 The estimated mean and standard deviation for The magnitude of the three-dimensional signals calculated using the Euclidean norm.
 
-fBodyAcc-mean()-XYZ (d)
-fBodyAcc-std()-XYZ (d)
-fBodyAccJerk-mean()-XYZ (d)
-fBodyAccJerk-std()-XYZ (d)
-fBodyGyro-mean()-XYZ (d)
-fBodyGyro-std()-XYZ (d)
-fBodyAccMag-mean() (d)
-fBodyAccMag-std() (d)
-fBodyBodyAccJerkMag-mean() (d)
-fBodyBodyAccJerkMag-std() (d)
-fBodyBodyGyroMag-mean() (d)
-fBodyBodyGyroMag-std() (d)
-fBodyBodyGyroJerkMag-mean() (d)
-fBodyBodyGyroJerkMag-std() (d)
+**fBodyAcc-mean()-XYZ (d)**<br>
+**fBodyAcc-std()-XYZ (d)**<br>
+**fBodyAccJerk-mean()-XYZ (d)**<br>
+**fBodyAccJerk-std()-XYZ (d)**<br>
+**fBodyGyro-mean()-XYZ (d)**<br>
+**fBodyGyro-std()-XYZ (d)**<br>
+**fBodyAccMag-mean() (d)**<br>
+**fBodyAccMag-std() (d)**<br>
+**fBodyBodyAccJerkMag-mean() (d)**<br>
+**fBodyBodyAccJerkMag-std() (d)**<br>
+**fBodyBodyGyroMag-mean() (d)**<br>
+**fBodyBodyGyroMag-std() (d)**<br>
+**fBodyBodyGyroJerkMag-mean() (d)**<br>
+**fBodyBodyGyroJerkMag-std() (d)**<br>
 The estimated mean and standard deviation for the Fast Fourier Transform (FFT) applied to some of the original time signals.
 
 Acknowledgement
