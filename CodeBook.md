@@ -2,7 +2,7 @@ Tidy Data CodeBook
 ===
 Overview
 ---
-This document contains information about the source data from which the tidy data are produced and information about the final data produced.  Information in this document borrows heavily from the [UCI HAR study documentation](https://www.elen.ucl.ac.be/Proceedings/esann/esannpdf/es2013-84.pdf).
+This document contains information about the source data from which the tidy data are produced and information about the final data produced.  Information in this document borrows heavily from the [UCI HAR study documentation](https://www.elen.ucl.ac.be/Proceedings/esann/esannpdf/es2013-84.pdf).  Also, note that the reader should consult the README in this repository for operational information, as well as the README and features_info.txt in the original HAR dataset package for further descriptions of data elements.
 
 The data have been extracted from the Human Activity Recognition (HAR) dataset.  The Human Activity Recognition dataset was built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.  The data are a public domain dataset, but its use requires an acknowledgement [1].
 
