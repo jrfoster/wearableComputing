@@ -18,7 +18,8 @@ The following data type definitions are utilized in this dictionary
 | --- | --- | -- |
 | c | classification | A coded classification, such M for Male, or F for Female |
 | d | decimal | Numeric data containing a decimal point with varying precision and scale |
-| i | integer | Numeric data (integer) containing no decimal point (whole number)  
+| i | integer | Numeric data (integer) containing no decimal point (whole number) |
+ 
 
 Data Elements
 ---
