@@ -15,12 +15,11 @@ Data Type Definitions
 The following data type definitions are utilized in this dictionary
 
 | Code | Term | Definition |
-| --- | --- | -- |
+| --- | --- | --- |
 | c | classification | A coded classification, such M for Male, or F for Female |
 | d | decimal | Numeric data containing a decimal point with varying precision and scale |
 | i | integer | Numeric data (integer) containing no decimal point (whole number) |
  
-
 Data Elements
 ---
 The authors of the study collected triaxial linear acceleration and angular velocity signals using the phone accelerometer and gyroscope at a sampling rate of 50Hz. These signals were preprocessed for noise reduction with a median filter and a 3rd order low-pass Butterworth filter with a 20 Hz cutoff frequency. The acceleration signal, which has gravitational and body motion components, was separated using another Butterworth low-pass filter into body acceleration and gravity. 
