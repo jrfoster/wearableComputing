@@ -26,23 +26,22 @@ The authors of the study collected triaxial linear acceleration and angular velo
 
 Additional time signals were obtained by calculating from the triaxial signals the Euclidean magnitude and time derivatives (jerk da/dt and angular acceleration dw/dt).  Thus, a total of 17 signals were obtained with this method, which are listed below.  '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+ - tBodyAcc-XYZ
+ - tBodyAccJerk-XYZ 
+ - tBodyGyro-XYZ
+ - tBodyGyroJerk-XYZ 
+ - tBodyAccMag
+ - tGravityAccMag
+ - tBodyAccJerkMag
+ - tBodyGyroMag
+ - tBodyGyroJerkMag
+ - fBodyAcc-XYZ
+ - fBodyAccJerk-XYZ
+ - fBodyGyro-XYZ
+ - fBodyAccMag
+ - fBodyAccJerkMag
+ - fBodyGyroMag
+ - fBodyGyroJerkMag
 
 From each sampled window described above a vector of features was obtained. Standard measures previously used in HAR literature such as the mean, correlation, signal magnitude area (SMA) and autoregression coefficients were employed for the feature mapping. A new set of features was also employed in order to improve the learning performance, including energy of different frequency bands, frequency skewness, and angle between vectors (e.g. mean body acceleration and y vector). Listed below are all the measures applied to the time and frequency domain signals.
 
