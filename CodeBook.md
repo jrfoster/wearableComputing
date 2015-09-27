@@ -8,6 +8,10 @@ The data have been extracted from the Human Activity Recognition (HAR) dataset. 
 
 The original experiments were conducted with a group of 30 volunteers between the ages of 19-48 years. Each person performed six activities (WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist.  The original dataset was randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.  The partitioning strategy is important because it directly implies that the two datasets (test and train) are mutually exclusive and can therefore be combined simply by appending (union) the rows of the training set to the rows of the test set.
 
+The data are combined from several files within the original dataset, with certain features extracted, as described below.  The original data were then aggregated to calculate means for each subject->activity grouping.  The following diagram gives a rough depiction of how the files were combined to produce the raw data prior to aggregation.
+
+![File Map](filemap.png)
+
 The data are given in a comma-separated file, with quoted strings.  The file contains a single header row.
 
 Data Type Definitions
