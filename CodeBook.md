@@ -22,9 +22,9 @@ The following data type definitions are utilized in this dictionary
 
 Data Elements
 ---
-The authors of the study collected triaxial linear acceleration and angular velocity signals using the phone accelerometer and gyroscope at a sampling rate of 50Hz. These signals were preprocessed for noise reduction with a median filter and a 3rd order low-pass Butter-worth filter with a 20 Hz cutoff frequency. This rate is sufficient for capturing human body motion since 99% of its energy is contained below 15Hz [3]. The acceleration signal, which has gravitational and body motion components, was separated using another Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore we found from the experiments that 0.3 Hz was an optimal corner frequency for a constant gravity signal.
+The authors of the study collected triaxial linear acceleration and angular velocity signals using the phone accelerometer and gyroscope at a sampling rate of 50Hz. These signals were preprocessed for noise reduction with a median filter and a 3rd order low-pass Butterworth filter with a 20 Hz cutoff frequency. The acceleration signal, which has gravitational and body motion components, was separated using another Butterworth low-pass filter into body acceleration and gravity. 
 
-Additional time signals were obtained by calculating from the triaxial signals the euclidean magnitude and time derivatives (jerk da/dt and angular acceleration dw/dt).  Thus, a total of 17 signals were obtained with this method, which are listed below.  '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+Additional time signals were obtained by calculating from the triaxial signals the Euclidean magnitude and time derivatives (jerk da/dt and angular acceleration dw/dt).  Thus, a total of 17 signals were obtained with this method, which are listed below.  '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 tBodyAcc-XYZ
 tGravityAcc-XYZ
@@ -70,7 +70,7 @@ With this, a total of 561 features were derived.
 
 From this 561-feature vector were chosen those corresponding to the mean (mean) and standard deviation (std) for the measurements utilizing a regular expression to create a 66-element vector.
 
-Thus, each observation (row) in this new data set consists of the following variables (columns).  Note, that '-XYZ' denotes three individual variables, one for each axes X, Y and Z.
+Therefore, each observation (row) in this new data set consists of the following variables (columns).  Note, that '-XYZ' denotes three individual variables, one for each axes X, Y and Z.
 
 **Subject (i)**
 A numeric string identifying the volunteer who performed the activity and whose data are recorded in the observation.  The source of the data is the union of the subject\_test.txt and subject\_train.txt.
@@ -120,6 +120,8 @@ The estimated mean and standard deviation for The magnitude of the three-dimensi
 **fBodyBodyGyroJerkMag-std()  (d)**
 The estimated mean and standard deviation for the Fast Fourier Transform (FFT) applied to some of the original time signals.
 
+Acknowledgement
+---
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
 
