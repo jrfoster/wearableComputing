@@ -74,10 +74,10 @@ From this 561-feature vector were chosen those corresponding to the mean (mean) 
 Therefore, each observation (row) in this new data set consists of the following variables (columns).  Note, that '-XYZ' denotes three individual variables, one for each axes X, Y and Z.
 
 **Subject (i)**<br>
-A numeric string identifying the volunteer who performed the activity and whose data are recorded in the observation.  The source of the data is the union of the subject\_test.txt and subject\_train.txt
+An integer in the range between 1 and 30 identifying the volunteer who performed the activity and whose data are recorded in the observation.  The source of the data is the union of the subject\_test.txt and subject\_train.txt
 
 **ActivityLabel (c)**<br>
-A string identifying the activity Subject performed to generate the data in the observation.  The source of this data is the union of the y\_test.txt and y\_train.txt expressed as a factor using data from the activity\_labels.txt file.
+A string identifying the activity Subject performed to generate the data in the observation.  Values for this variable are one of the following (WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING, STANDING or LAYING).  The source of this data is the union of the y\_test.txt and y\_train.txt expressed as a factor using data from the activity\_labels.txt file.
 
 **tBodyAcc-mean()-XYZ (d)**<br>
 **tBodyAcc-std()-XYZ (d)**<br>
