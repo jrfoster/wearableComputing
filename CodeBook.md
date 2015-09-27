@@ -85,40 +85,40 @@ tGravityAcc-mean()-XYZ (d)
 tGravityAcc-std()-XYZ (d)
 The estimated mean and standard deviation for the acceleration signal, separated into body and gravity acceleration signals.
 
- - **tBodyAccJerk-mean()-XYZ (d)**
- - **tBodyAccJerk-std()-XYZ (d)**
- - **tBodyGyro-mean()-XYZ (d)**
- - **tBodyGyro-std()-XYZ (d)**
- - **tBodyGyroJerk-mean()-XYZ (d)**
- - **tBodyGyroJerk-std()-XYZ (d)**
+tBodyAccJerk-mean()-XYZ (d)
+tBodyAccJerk-std()-XYZ (d)
+tBodyGyro-mean()-XYZ (d)
+tBodyGyro-std()-XYZ (d)
+tBodyGyroJerk-mean()-XYZ (d)
+tBodyGyroJerk-std()-XYZ (d)
 The estimated mean and standard deviation for the jerk signals derived from the body linear acceleration and angular velocity.
 
-**tBodyAccMag-mean() (d)**
-**tBodyAccMag-std() (d)**
-**tGravityAccMag-mean() (d)**
-**tGravityAccMag-std() (d)**
-**tBodyAccJerkMag-mean() (d)**
-**tBodyAccJerkMag-std() (d)**
-**tBodyGyroMag-mean() (d)**
-**tBodyGyroMag-std() (d)**
-**tBodyGyroJerkMag-mean() (d)**
-**tBodyGyroJerkMag-std() (d)**
+tBodyAccMag-mean() (d)
+tBodyAccMag-std() (d)
+tGravityAccMag-mean() (d)
+tGravityAccMag-std() (d)
+tBodyAccJerkMag-mean() (d)
+tBodyAccJerkMag-std() (d)
+tBodyGyroMag-mean() (d)
+tBodyGyroMag-std() (d)
+tBodyGyroJerkMag-mean() (d)
+tBodyGyroJerkMag-std() (d)
 The estimated mean and standard deviation for The magnitude of the three-dimensional signals calculated using the Euclidean norm.
 
-**fBodyAcc-mean()-XYZ (d)**
-**fBodyAcc-std()-XYZ (d)**
-**fBodyAccJerk-mean()-XYZ (d)**
-**fBodyAccJerk-std()-XYZ (d)**
-**fBodyGyro-mean()-XYZ (d)**
-**fBodyGyro-std()-XYZ (d)**
-**fBodyAccMag-mean() (d)**
-**fBodyAccMag-std() (d)**
-**fBodyBodyAccJerkMag-mean() (d)**
-**fBodyBodyAccJerkMag-std() (d)**
-**fBodyBodyGyroMag-mean() (d)**
-**fBodyBodyGyroMag-std() (d)**
-**fBodyBodyGyroJerkMag-mean() (d)**
-**fBodyBodyGyroJerkMag-std()  (d)**
+fBodyAcc-mean()-XYZ (d)
+fBodyAcc-std()-XYZ (d)
+fBodyAccJerk-mean()-XYZ (d)
+fBodyAccJerk-std()-XYZ (d)
+fBodyGyro-mean()-XYZ (d)
+fBodyGyro-std()-XYZ (d)
+fBodyAccMag-mean() (d)
+fBodyAccMag-std() (d)
+fBodyBodyAccJerkMag-mean() (d)
+fBodyBodyAccJerkMag-std() (d)
+fBodyBodyGyroMag-mean() (d)
+fBodyBodyGyroMag-std() (d)
+fBodyBodyGyroJerkMag-mean() (d)
+fBodyBodyGyroJerkMag-std() (d)
 The estimated mean and standard deviation for the Fast Fourier Transform (FFT) applied to some of the original time signals.
 
 Acknowledgement
