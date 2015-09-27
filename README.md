@@ -51,6 +51,7 @@ To run the driver program, simply execute the function run_analysis() in the R c
 
 
 Details
+
 The function requires data.table, and will install it, plus its dependencies, if not present in the environment.  If unable to install or load this package, the function will halt.
 
 The function requires the HAR dataset, and will make a small attempt to verify that its actually there by checking for datadir within the current working directory, along with datadir/test and datadir/train.  If any of those directories are not present, the function will halt.
